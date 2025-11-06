@@ -1,7 +1,7 @@
 The following regular expression will return only numerical values from the field token used. This will work with any field type, not just a phone field.
 
 ```php
-preg_replace(\"/\[\^\\d\]/\", \"\", Phone-Field)
+preg_replace("/[^\d]/", "", Phone-Field)
 ```
 
 **How to use:**
