@@ -1,8 +1,8 @@
-Podio\'s power and ease of customization make it an ideal platform for solar installation businesses. There are software services built specifically for this purpose, but they force you into their own structure instead of allowing you to custom build your own.
+Podio's power and ease of customization make it an ideal platform for solar installation businesses. There are software services built specifically for this purpose, but they force you into their own structure instead of allowing you to custom build your own.
 
-This guide will show you how to set up a basic template for your solar business, with suggestions on further customizing it to maximize efficiency and seamlessly fit your team\'s processes. The template is built to maximize efficiency while helping your team stay on top of their tasks.
+This guide will show you how to set up a basic template for your solar business, with suggestions on further customizing it to maximize efficiency and seamlessly fit your team's processes. The template is built to maximize efficiency while helping your team stay on top of their tasks.
 
-**Don\'t want to build the apps and flows yourself? [[Contact us]{.underline}](https://forms.momentumtools.io/?form=lqjomvmsqiir&services-requested=5&what-would-you-like-to-purchase%5b2%5d=true) to purchase the starter template shown here for \$1000.**
+**Don't want to build the apps and flows yourself? [Contact us](https://forms.momentumtools.io/?form=lqjomvmsqiir&services-requested=5&what-would-you-like-to-purchase%5b2%5d=true) to purchase the starter template shown here for $1000.**
 
 As you browse the guide, keep in mind this is just one of many ways you can set up Podio for your solar business. If you would like something more custom for your existing processes, we also offer [**personalized setup assistance**](https://forms.momentumtools.io/?form=lqjomvmsqiir&services-requested=2) for a more custom-tailored workspace.
 
@@ -12,21 +12,19 @@ If you are still deciding if Podio is the right tool for you, we recommend looki
 
 **Projects**
 
-![](media/image1.png){width="6.5in" height="0.6590277777777778in"}
+![Screenshot](/images/example_solar_apps.png)
 
-First, we use a **Projects** app as the container for all information related to the project, with separate apps for scheduled events such as site surveys and installations. We have chosen to separate these events to help keep things organized yet easily accessible. If you track too many different things all from one app, it can be very difficult to find the information you need, and the app\'s performance will be degraded as well.
+First, we use a **Projects** app as the container for all information related to the project, with separate apps for scheduled events such as site surveys and installations. We have chosen to separate these events to help keep things organized yet easily accessible. If you track too many different things all from one app, it can be very difficult to find the information you need, and the app's performance will be degraded as well.
 
 The Project app contains section headers to divide up the various aspects of the project. 
 
 A sample project:
 
- 
-
-![](media/image2.gif){width="6.5in" height="4.509027777777778in"}
+![Screenshot](/images/example_solar_project.gif)
 
 **The Project App sections are as follows:**
 
-- **Customer Information:** The customer\'s contact info and property address for the solar installation
+- **Customer Information:** The customer's contact info and property address for the solar installation
 
 - **Project Details: **Information about the project such as panel type, number of panels, any special additions, etc.
 
@@ -46,7 +44,7 @@ In addition to linking to separate stage apps, we have also created a **Databas
 
 - Finance companies
 
-You can store anything else here as well - just add a new Category field via the [[app template]{.underline}](https://help.podio.com/hc/en-us/articles/201019578-Modifying-an-app) to keep everything organized by type.
+You can store anything else here as well - just add a new Category field via the [app template](https://help.podio.com/hc/en-us/articles/201019578-Modifying-an-app) to keep everything organized by type.
 
 **Common Question:** Why use the Database app instead of adding category fields in Projects for Panels/Inverters/etc?
 
@@ -54,25 +52,23 @@ You can store anything else here as well - just add a new Category field via the
 
 - Additionally, as models are replaced with newer versions, you can keep historical data by marking equipment types as Active or Inactive. Your relationship field in Projects can be set to show only the active equipment:
 
-![A screenshot of a computer
-AI-generated content may be incorrect.](media/image3.png){width="6.5in" height="3.78125in"}
+![Screenshot](/images/example_solar_relationship.png)
 
 **Scheduling Apps: Site Surveys, Permits, Installs and Inspections**
 
 A major benefit to keeping these apps separate is that you will typically have different teams in each respective event type, and this gives a clean and straightforward area for those teams to go to find their scheduled events.
 
-Team members can use [[filters]{.underline}](https://help.podio.com/hc/en-us/articles/201019638-Views-filters-and-reports) to show only the items assigned to them.
+Team members can use [filters](https://help.podio.com/hc/en-us/articles/201019638-Views-filters-and-reports) to show only the items assigned to them.
 
-You can also use the \"Show in calendars\" option to ensure that team members will see their events from their [[Podio calendars]{.underline}](https://podio.com/calendar).
+You can also use the "Show in calendars" option to ensure that team members will see their events from their [Podio calendars](https://podio.com/calendar).
 
-![A screenshot of a computer
-AI-generated content may be incorrect.](media/image4.png){width="4.861111111111111in" height="5.986111111111111in"}
+![Screenshot](/images/example_solar_calendar.png)
 
 **Task app**
 
-This is an optional app to assign tasks to your team members. Some prefer to use [[Podio\'s built-in task system]{.underline}](https://help.podio.com/hc/en-us/articles/201019558-Overview-of-tasks), but this is meant for quick to-do\'s and lacks reporting, customization, and collaboration options.
+This is an optional app to assign tasks to your team members. Some prefer to use [Podio's built-in task system](https://help.podio.com/hc/en-us/articles/201019558-Overview-of-tasks), but this is meant for quick to-do's and lacks reporting, customization, and collaboration options.
 
-The tasks app is linked to the Projects app, and can be [[modified]{.underline}](https://help.podio.com/hc/en-us/articles/201019578-Modifying-an-app) to link to any other app as needed. We recommend setting up Workflow Automation flows to create tasks here on certain triggers, such as an install being scheduled or a new project being assigned to a Project Coordinator.
+The tasks app is linked to the Projects app, and can be [modified](https://help.podio.com/hc/en-us/articles/201019578-Modifying-an-app) to link to any other app as needed. We recommend setting up Workflow Automation flows to create tasks here on certain triggers, such as an install being scheduled or a new project being assigned to a Project Coordinator.
 
 **Podio Workflow Automation suggestions for template workspace**
 
@@ -80,7 +76,7 @@ Consider these as a few examples of what is possible in automating your space, b
 
 **Projects**
 
-- On Project creation, [[assign a Project Coordinator via round robin]{.underline}](https://tutorials.zooli.io/hc/en-us/articles/360035354434-Building-a-Round-Robin-Assignment-Flow)
+- On Project creation, [assign a Project Coordinator via round robin](https://tutorials.zooli.io/hc/en-us/articles/360035354434-Building-a-Round-Robin-Assignment-Flow)
 
 - When a project stage changes to Site Survey, Permit, Install, or Inspection, create a new item in the respective app and link it to the project
 
@@ -102,7 +98,7 @@ Consider these as a few examples of what is possible in automating your space, b
 
 **Permits**
 
-- When the status changes to \"Permit Obtained,\" update the Project stage to Install (also triggers flow above in Projects, notifying the Project Coordinator to schedule the install)
+- When the status changes to "Permit Obtained," update the Project stage to Install (also triggers flow above in Projects, notifying the Project Coordinator to schedule the install)
 
 **Installs**
 
@@ -116,10 +112,10 @@ Consider these as a few examples of what is possible in automating your space, b
 
 - On the day before an inspection, send an email to the inspector with the inspection information
 
-- On the evening of the inspection, if the inspection was not marked as either \"Passed\" or \"Issues Found,\" send an email to the inspector reminding them to update the installation item in Podio with the inspection result
+- On the evening of the inspection, if the inspection was not marked as either "Passed" or "Issues Found," send an email to the inspector reminding them to update the installation item in Podio with the inspection result
 
 - When the inspection is complete, set Project stage to Awaiting PTO
 
 **Tasks**
 
-- On a task\'s due date, if incomplete, \@mention the task assignee to remind them about the task
+- On a task's due date, if incomplete, @mention the task assignee to remind them about the task
