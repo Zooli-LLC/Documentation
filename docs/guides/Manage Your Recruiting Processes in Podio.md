@@ -1,6 +1,6 @@
 This guide will show you how to manage your recruiting processes with Podio and Workflow Automation. This workspace is built to let Podio and Workflow Automation handle the busy work, allowing you to focus your time on finding the perfect candidate to join your team.
 
-**Don\'t want to build the apps and flows yourself? [[Contact us]{.underline}](https://forms.momentumtools.io/?form=lqjomvmsqiir&services-requested=5&what-would-you-like-to-purchase%5b3%5d=true) to purchase the starter template shown here for \$400.**
+**Don't want to build the apps and flows yourself? [Contact us](https://forms.momentumtools.io/?form=lqjomvmsqiir&services-requested=5&what-would-you-like-to-purchase%5b3%5d=true) to purchase the starter template shown here for $400.**
 
 **Watch the video:**
 
@@ -8,7 +8,7 @@ The workspace is set up with 3 apps: **Requisitions**, **Candidates**, and** 
 
 **Requisitions**
 
-This app contains all of your job openings and all of the details that go with them. In addition to the information around the job opening, you can also find all applicants for each position via the \"Related Items\" section at the bottom.
+This app contains all of your job openings and all of the details that go with them. In addition to the information around the job opening, you can also find all applicants for each position via the "Related Items" section at the bottom.
 
 The Requisitions app contains the following fields:
 
@@ -38,10 +38,9 @@ The Requisitions app contains the following fields:
 
 **Candidates**
 
-This app will capture the applicant details for your job listings. This is where you will review each of the candidates who has applied for your open requisitions and track their status through the hiring process. We recommend setting up [[filters]{.underline}](https://help.podio.com/hc/en-us/articles/201019638-Views-filters-and-reports) in this app to efficiently manage the candidates you are reviewing. For example, you can set up a filter that shows only the unreviewed candidates for a specific job opening:
+This app will capture the applicant details for your job listings. This is where you will review each of the candidates who has applied for your open requisitions and track their status through the hiring process. We recommend setting up [filters](https://help.podio.com/hc/en-us/articles/201019638-Views-filters-and-reports) in this app to efficiently manage the candidates you are reviewing. For example, you can set up a filter that shows only the unreviewed candidates for a specific job opening:
 
-![A screenshot of a computer
-AI-generated content may be incorrect.](media/image1.png){width="6.5in" height="4.959027777777778in"}
+![Screenshot](/images/example_recruiting_filter.png)
 
 After setting up the filter, you can click on any candidate and then use the arrow keys on your keyboard to quickly review each candidate in your filter. 
 
@@ -91,19 +90,17 @@ As noted above, the options in this field can also be customized to fit your own
 
 Just like it sounds, your interviews will be scheduled in the Interviews app. This app is an **Event type app** which allows interview attendees to RSVP to their interview. You can also set up a GoToMeeting or Appear In videoconference if the meeting will take place remotely:
 
-![A screenshot of a video call
-AI-generated content may be incorrect.](media/image2.png){width="6.5in" height="2.41875in"}
+![Screenshot](/images/example_recruiting_interview.png)
 
 When you invite your candidate to the Interview item in Podio, they will receive an email invitation with an RSVP option. The email will also contain a calendar invitation so that the interview date and time will automatically be added to their calendar. 
 
-![A screenshot of a chat
-AI-generated content may be incorrect.](media/image3.png){width="6.5in" height="4.777083333333334in"}
+![Screenshot](/images/example_recruiting_invite.png)
 
 Note that this also gives the candidate access to the Interview item in Podio, so you should not store any internal information here. We recommend keeping your notes on the interview in the **Candidate **app item instead.
 
 The Interviews app contains the following fields:
 
-**Title**: Calculation field combining the candidate\'s name and the position they are applying for (e.g. \"Lauren Byerly for Technical Writer\")
+**Title**: Calculation field combining the candidate's name and the position they are applying for (e.g. "Lauren Byerly for Technical Writer")
 
 **Candidate**: Relationship field pointing to the **Candidates** app
 
