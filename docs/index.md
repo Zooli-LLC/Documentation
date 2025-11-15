@@ -1,17 +1,9 @@
-# Welcome to Zooli Docuemtnation
+## Zooli Documentation — Tutorials for Podio and Tape
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Welcome to Zooli's docs hub. These guides and tutorials show how to build, automate, and extend business workflows using Podio and Tape. Whether you're setting up a new workspace, building calculations and automations, or integrating with other systems, start here.
 
-## Commands
+### Who this is for
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+- Administrators and workspace owners setting up Podio or Tape for teams
+- Power users building calculations, relationships, and automation flows
+- Developers integrating Podio or Tape with external systems
