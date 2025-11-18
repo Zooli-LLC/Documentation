@@ -8,7 +8,7 @@ This is a developer-level tutorial. Some programming experience is required for 
 - Creating Bills (with Line Item support)
 - One-way integration (Podio to Quickbooks) for Products/Services, Vendors, and Customers
 
-We also offer pay-as-you-go customization. If you are interested in either of the above, please [**get in touch**](https://forms.momentumtools.io/?form=lqjomvmsqiir&services-requested=5&what-would-you-like-to-purchase%5b6%5d=true) and we are happy to help.
+We also offer pay-as-you-go customization. If you are interested in either of the above, please [**get in touch**](https://zooli.io/contact.html) and we are happy to help.
 
 **Watch the video demo:**
 
@@ -139,4 +139,4 @@ foo();function foo(){
 }
 ```
 
-Be sure to thoroughly test these flows prior to using them with your customers. And as always, if you have any questions, do not hesitate to [get in touch](https://forms.momentumtools.io/?form=lqjomvmsqiir&services-requested=5&what-would-you-like-to-purchase%5b6%5d=true) and we will be happy to assist. 
+Be sure to thoroughly test these flows prior to using them with your customers. And as always, if you have any questions, do not hesitate to [get in touch](https://zooli.io/contact.html) and we will be happy to assist. 
