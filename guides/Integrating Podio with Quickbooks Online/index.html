@@ -1,0 +1,945 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.zooli.io/guides/Integrating%20Podio%20with%20Quickbooks%20Online/">
+      
+      
+        <link rel="prev" href="../How%20Do%20I%20Backup%20my%20Podio%20Data/">
+      
+      
+        <link rel="next" href="../Manage%20Your%20Recruiting%20Processes%20in%20Podio/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.2">
+    
+    
+      
+        <title>Integrating Podio with Quickbooks Online - Zooli Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-3BF57DHM3R"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-3BF57DHM3R",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-3BF57DHM3R",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Zooli Documentation" class="md-header__button md-logo" aria-label="Zooli Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Zooli Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Integrating Podio with Quickbooks Online
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Zooli Documentation" class="md-nav__button md-logo" aria-label="Zooli Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Zooli Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Free starter templates
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Free starter templates
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../free_starter_templates/free-starter-template-real-estate-investment-crm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ⚡️Free Starter Template: Automated and Customizable Real Estate Investment CRM with Tape
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../free_starter_templates/free-starter-template-sales-crm-and-drip-campaigns/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ⚡️Free Starter Template: Sales CRM and Drip Campaigns with Tape
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../free_starter_templates/free-starter-template-solar-project-management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ⚡️Free Starter Template: Solar Project Management Software with Tape
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guides
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guides
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Calculation-Build%20a%20Table%20from%20Related%20Items/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Calculation Build a Table from Related Items
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Calculation-Minutes%2C%20Hours%2C%20or%20Days%20betwee%20Date%20Fields/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Calculation Minutes, Hours, or Days betwee Date Fields
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Complete%20Parent%20Item%20when%20Child%20Items%20are%20Complete/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Complete Parent Item when Child Items are Complete
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Duplicate%20Handling%20in%20Podio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Duplicate Handling in Podio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../How%20Do%20I%20Backup%20my%20Podio%20Data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🗂️ How can I back up my Podio data?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Integrating Podio with Quickbooks Online
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Manage%20Your%20Recruiting%20Processes%20in%20Podio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Manage Your Recruiting Processes in Podio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Regex-%20Get%20Only%20Numbers%20from%20a%20Phone%20Field/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Regex  Get Only Numbers from a Phone Field
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Round%20Robin%20Assignment%20in%20Podio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Round Robin Assignment in Podio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Setting%20Up%20Drip%20Campaigns%20and%20Follow%20Up%20Schedules%20in%20Podio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Setting Up Drip Campaigns and Follow Up Schedules in Podio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Solar%20Project%20Management%20in%20Podio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Solar Project Management in Podio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Integrating Podio with Quickbooks Online</h1>
+
+<p>Quickbooks Online offers a flexible API that allows you to send an receive several different data points with Podio. This guide will walk through the authentication setup, and will create a basic flow that creates Quickbooks Online Invoices from Podio app items. Since there are many different setup requirements depending on your team's needs, this guide can be used as a framework for creating other items in Quickbooks Online, such as Bills, Payments, and more.</p>
+<p>This is a developer-level tutorial. Some programming experience is required for this setup.</p>
+<p><strong>We provide a fully set up workspace with Podio Workflow Automation flows for a one-time fee, which includes:</strong></p>
+<ul>
+<li>Creating Invoices (with Line Item support)</li>
+<li>Creating Bills (with Line Item support)</li>
+<li>One-way integration (Podio to Quickbooks) for Products/Services, Vendors, and Customers</li>
+</ul>
+<p>We also offer pay-as-you-go customization. If you are interested in either of the above, please <a href="https://zooli.io/contact.html"><strong>get in touch</strong></a> and we are happy to help.</p>
+<p><strong>Watch the video demo:</strong></p>
+<p><strong>Sending data from Podio to Quickbooks Online</strong></p>
+<p><strong>For this guide, you will need:</strong></p>
+<ul>
+<li><strong>Podio Workflow Automation</strong> (included in all Podio Premium plans)</li>
+<li><a href="http://procfu.com/"><strong>ProcFu</strong></a>: Advanced scripting tool built by the original creator of Podio Workflow Automation, formerly known as GlobiFlow (we recommend at least a Bronze plan)</li>
+<li><strong><a href="https://developer.intuit.com/app/developer/homepage">Intuit Developer account</a></strong> Sign in with your Quickbooks Online credentials</li>
+</ul>
+<p><strong>Step 1: Set up your Podio apps</strong></p>
+<p>The first step is to get your Podio apps set up to contain all the information necessary to send to Quickbooks. We highly recommend keeping entirely separate apps specifically for your Quickbooks data vs. building the integration into apps you are already using for another purpose. This keeps data properly segregated for this purpose and also gives you the option to feed information from multiple workspaces into your Quickbooks apps. </p>
+<p>For creating Quickbooks Invoices, you will need 2 apps: <strong>Customers</strong> and <strong>Invoices</strong>, with an optional third <strong>Line Items</strong> app. </p>
+<p><strong>Customers App</strong></p>
+<p>The Customers app needs at minimum 2 fields: Customer Name and Customer ID. The Customer ID is the Quickbooks ID for the customer. If you have existing customer in your Quickbooks Online account, you can export that list to Excel and then import it into this app.</p>
+<p><strong>Invoices App</strong></p>
+<p>The Invoices app also needs at minimum 2 fields: A Relationship field to the Customers app, and Invoice Amount. If your invoices will have custom line items (i.e. if the invoices won't always have the same singular line item), then you will also need a Relationship field to a Line Items app, explained below.</p>
+<p><strong>Line Items App (optional)</strong></p>
+<p>The Line Items app needs 2 fields: Line Item Name and Quickbooks ID. These are classified as Items in Quickbooks and can be found in the Products and Services section in your account. Similar to Customers, if you have existing items in Quickbooks Online then you can export that list an import them into this app.</p>
+<p><strong>Step 2: Create an app from your Intuit Developer account</strong></p>
+<p>Log in to your <a href="https://developer.intuit.com/app/developer/homepage">Intuit Developer Account</a> and select "My Apps" at the top. Follow the steps to create an app for Quickbooks Online and Payments. You can name the app whatever you like, and select Accounting for the scope. </p>
+<p>Once the app is created, navigate to the "Keys &amp; OAuth" section under Production. You may also start by developing in the Development environment if this is your first time setting up this integration. </p>
+<p>In the Production environment, you will see that you need to complete some additional setup information. Once this is done, you will see the Keys &amp; OAuth information for your new app which is used in the next step. </p>
+<p>In the Redirect URIs section, select "Add URI" and add <a href="https://procfu.com/authenticate.php">https://procfu.com/authenticate.php</a>.</p>
+<p><strong>Step 3: Set up API Configuration in ProcFu</strong></p>
+<p>ProcFu is what will allow Podio to communicate with Quickbooks Online's developer API. To begin this setup, log in to ProcFu and go to Menu -&gt; Configuration. In the upper right, click the "<a href="https://procfu.com/apiService.php?id=0">Add API</a>" link. Fill out the next page with the following:</p>
+<ul>
+<li>
+<p><strong>Service Name:</strong> Your choice. We usually use "quickbooks_production"</p>
+</li>
+<li>
+<p><strong>Client ID: </strong>Client ID from your app created in Step 1</p>
+</li>
+<li>
+<p><strong>Client Secret: </strong>Client Secret from your app created in Step 1</p>
+</li>
+<li>
+<p><strong>Authorize URL:</strong> <a href="https://appcenter.intuit.com/connect/oauth2">https://appcenter.intuit.com/connect/oauth2</a></p>
+</li>
+<li>
+<p><strong>Scopes: </strong>com.intuit.quickbooks.accounting</p>
+</li>
+<li>
+<p><strong>Access Token URL:</strong> <a href="https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer">https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer</a></p>
+</li>
+<li>
+<p><strong>Resource Owner Details URL:</strong> <a href="https://accounts.platform.intuit.com/v1/openid_connect/userinfo">https://accounts.platform.intuit.com/v1/openid_connect/userinfo</a></p>
+</li>
+<li>
+<p><strong>Redirect Success URL:</strong> Your choice. We usually use the Podio workspace URL.</p>
+</li>
+<li>
+<p><strong>Redirect Failure URL:</strong> Same as above</p>
+</li>
+</ul>
+<p><strong>Step 4: Building your Podio Workflow Automation flows</strong></p>
+<p><strong>Authenticating for the first time</strong></p>
+<p>You will need to set up a flow using the <a href="http://procfu.com/script.php?s=api_get_login_link.pf">[API Get Login Link ProcFu script]{.underline}</a>. The API Service parameter is the Service Name from Step 3 and the User ID is the email address for your ProcFu account. The response for this call is an OAuth login link - we recommend setting up a Task as part of this flow containing the login link, then run the flow once to receive the link.</p>
+<p><strong>Creating Customers</strong></p>
+<p>This flow will live in your Customers app. We recommend setting this as a Manual flow so that you can set up multiple triggers to create customers. Create a custom variable which contains the payload to be sent to Quickbooks. A simple example payload:</p>
+<pre><code class="language-php">foo();function foo(){
+    return json_encode([
+        &quot;DisplayName&quot; =&gt; {Contact Name},
+        &quot;PrimaryEmailAddr&quot; =&gt; [
+            &quot;Address&quot; =&gt; {Contact Email}
+        ]
+    ]);
+}
+</code></pre>
+<p>Send this payload using <a href="http://procfu.com/script.php?s=api_make_request.pf">ProcFu's Make API Request script</a>. The URL for this particular call is:</p>
+<p><a href="https://quickbooks.api.intuit.com/v3/company/%7BCompanyID%7D/customer">https://quickbooks.api.intuit.com/v3/company/{CompanyID}/customer</a></p>
+<p>Extract the Customer ID from the response and store it in the Customer ID field in your app. The variable we used for this is:</p>
+<pre><code class="language-php">json_decode([(Variable) create_customer_response], true)[&quot;Customer&quot;][&quot;Id&quot;]
+</code></pre>
+<p><strong>Creating Invoices</strong></p>
+<p>This flow lives in the Invoices app. Similar to Customers, we recommend setting this up as a Manual flow so that you can have multiple triggers as needed. This flow also sends a payload via ProcFu's Make API Request script. Follow <a href="https://developer.intuit.com/app/developer/qbo/docs/api/accounting/most-commonly-used/customer#create-a-customer">Quickbooks Online's Create Customer documentation</a> to format your request. Here is an example payload:</p>
+<pre><code class="language-php">foo();function foo(){
+    return json_encode([
+        &quot;Line&quot; =&gt; [
+        [
+            &quot;DetailType&quot; =&gt; &quot;SalesItemLineDetail&quot;,
+            &quot;Amount&quot; =&gt; {Amount},
+            &quot;SalesItemLineDetail&quot; =&gt; [
+                &quot;ItemRef&quot; =&gt; [
+                    &quot;name&quot; =&gt; {Line Item Name},
+                    &quot;value&quot; =&gt; {Line Item ID}
+                    ]
+                ]
+            ]
+        ],
+        &quot;CustomerRef&quot; =&gt; [
+            &quot;value&quot; =&gt; {Quickbooks Customer ID}
+        ],
+        &quot;CustomerMemo&quot; =&gt; [
+            &quot;value&quot; =&gt; {Memo}
+        ],
+        &quot;AllowOnlineACHPayment&quot; =&gt; true,
+        &quot;BillEmail&quot; =&gt; [
+            &quot;Address&quot; =&gt; {Customer Email Address}
+        ],
+        &quot;SalesTermRef&quot; =&gt; [
+            &quot;value&quot; =&gt; {Sales Terms}
+        ],
+        &quot;TxnDate&quot; =&gt; {Invoice Date},
+        &quot;DueDate&quot; =&gt; {Invoice Due Date}
+    ]);
+}
+</code></pre>
+<p>Be sure to thoroughly test these flows prior to using them with your customers. And as always, if you have any questions, do not hesitate to <a href="https://zooli.io/contact.html">get in touch</a> and we will be happy to assist. </p>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
