@@ -2,3 +2,7 @@ site_name: Zooli Documentation
 site_url: https://docs.zooli.io/
 theme:
   name: material
+extra:
+  analytics:
+    provider: google
+    property: G-3BF57DHM3R
