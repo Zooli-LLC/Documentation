@@ -1,8 +1,350 @@
+/* ── Zooli Documentation — Brand CSS ── */
+/* Drop this file at docs/stylesheets/extra.css  */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap');
+
+/* ── BRAND COLOR TOKENS ── */
 :root {
-  --md-primary-fg-color:        #1587c2;
-  --md-primary-fg-color--light: #daeef8;
-  --md-primary-fg-color--dark:  #0f6fa6;
-  --md-accent-fg-color:         #1587c2;
-  --md-text-font:               "DM Sans";
-  --md-code-font:               "Roboto Mono";
+  --md-primary-fg-color:              #1587c2;
+  --md-primary-fg-color--light:       #daeef8;
+  --md-primary-fg-color--dark:        #0f6fa6;
+  --md-accent-fg-color:               #1587c2;
+  --md-accent-fg-color--transparent:  rgba(21,135,194,0.1);
+
+  /* Page background — matches site's --paper */
+  --md-default-bg-color:              #f0f4f8;
+
+  /* Sidebar background */
+  --md-sidebar-bg:                    #ffffff;
+
+  /* Typography */
+  --md-text-font:                     "DM Sans";
+  --md-code-font:                     "Roboto Mono";
+
+  /* Text colors */
+  --md-default-fg-color:              #111827;
+  --md-default-fg-color--light:       #5a6a80;
+  --md-default-fg-color--lighter:     #8a9ab0;
+  --md-default-fg-color--lightest:    rgba(17,24,39,0.08);
+
+  /* Typeset link color */
+  --md-typeset-a-color:               #1587c2;
+}
+
+/* ── HEADER / NAV BAR ── */
+.md-header {
+  background: linear-gradient(135deg, #111827 0%, #1a2d45 100%);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.06), 0 4px 20px rgba(17,24,39,0.25);
+}
+
+.md-header__title {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  font-size: 1.05rem;
+}
+
+/* Search bar */
+.md-search__form {
+  background: rgba(255,255,255,0.10);
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.md-search__form:hover,
+.md-search__form:focus-within {
+  background: rgba(255,255,255,0.18);
+}
+
+.md-search__input::placeholder { color: rgba(255,255,255,0.5); }
+
+/* ── PAGE BACKGROUND ── */
+.md-main {
+  background: var(--md-default-bg-color);
+}
+
+.md-content {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 2px 20px rgba(17,24,39,0.06);
+  margin: 1.5rem 0.75rem 1.5rem 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.md-content__inner {
+  padding: 2.5rem 3rem;
+  margin: 0;
+}
+
+/* ── SIDEBAR ── */
+.md-sidebar {
+  background: transparent;
+}
+
+.md-sidebar__inner {
+  padding-top: 1.5rem;
+}
+
+/* Nav section titles */
+.md-nav__title {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #5a6a80;
+  padding: 0.75rem 0.75rem 0.25rem;
+}
+
+/* Nav items */
+.md-nav__item .md-nav__link {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #2e3d52;
+  border-radius: 8px;
+  padding: 0.4rem 0.75rem;
+  margin: 1px 0;
+  transition: background 0.15s, color 0.15s;
+}
+
+.md-nav__item .md-nav__link:hover {
+  background: var(--md-accent-fg-color--transparent);
+  color: #1587c2;
+}
+
+.md-nav__item .md-nav__link--active {
+  background: rgba(21,135,194,0.10);
+  color: #1587c2 !important;
+  font-weight: 600;
+}
+
+/* ── TYPOGRAPHY ── */
+
+/* Page title (h1) */
+.md-typeset h1 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  font-size: 2.2rem;
+  letter-spacing: -0.03em;
+  color: #111827;
+  border-bottom: 2px solid #daeef8;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+}
+
+/* h2 */
+.md-typeset h2 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: -0.02em;
+  color: #111827;
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(17,24,39,0.08);
+}
+
+/* h3 */
+.md-typeset h3 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: -0.01em;
+  color: #1f2d3d;
+  margin-top: 1.75rem;
+}
+
+/* Body text */
+.md-typeset {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: #1f2d3d;
+}
+
+/* Links */
+.md-typeset a {
+  color: #1587c2;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid rgba(21,135,194,0.25);
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.md-typeset a:hover {
+  color: #0f6fa6;
+  border-bottom-color: #0f6fa6;
+}
+
+/* ── CODE BLOCKS ── */
+.md-typeset code {
+  background: #e8f0f6;
+  color: #0f6fa6;
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  font-size: 0.875em;
+  font-weight: 500;
+}
+
+.md-typeset pre {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(17,24,39,0.08);
+}
+
+.md-typeset pre > code {
+  background: #1a2233;
+  color: #e2e8f0;
+  font-size: 0.875rem;
+  line-height: 1.7;
+  padding: 1.25rem 1.5rem;
+  border-radius: 0;
+}
+
+/* Code block filename label */
+.md-typeset .highlight span.filename {
+  background: #111827;
+  color: rgba(255,255,255,0.5);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+/* ── ADMONITIONS (note/tip/warning boxes) ── */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 12px;
+  border-left-width: 4px;
+  box-shadow: 0 2px 12px rgba(17,24,39,0.06);
+  font-size: 0.9rem;
+}
+
+.md-typeset .admonition.note,
+.md-typeset details.note {
+  border-left-color: #1587c2;
+  background: rgba(21,135,194,0.05);
+}
+
+.md-typeset .admonition.tip,
+.md-typeset details.tip {
+  border-left-color: #22c55e;
+  background: rgba(34,197,94,0.05);
+}
+
+.md-typeset .admonition.warning,
+.md-typeset details.warning {
+  border-left-color: #f59e0b;
+  background: rgba(245,158,11,0.05);
+}
+
+/* ── TABLES ── */
+.md-typeset table:not([class]) {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(17,24,39,0.06);
+  border: none;
+  font-size: 0.9rem;
+}
+
+.md-typeset table:not([class]) th {
+  background: #111827;
+  color: #ffffff;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.85rem 1rem;
+  border: none;
+}
+
+.md-typeset table:not([class]) td {
+  padding: 0.75rem 1rem;
+  border-top: 1px solid rgba(17,24,39,0.07);
+  color: #1f2d3d;
+}
+
+.md-typeset table:not([class]) tr:hover td {
+  background: rgba(21,135,194,0.04);
+}
+
+/* ── TABLE OF CONTENTS (right sidebar) ── */
+.md-nav--secondary .md-nav__title {
+  color: #5a6a80;
+  font-size: 0.68rem;
+}
+
+.md-nav--secondary .md-nav__link {
+  font-size: 0.8rem;
+  color: #5a6a80;
+}
+
+.md-nav--secondary .md-nav__link--active {
+  color: #1587c2 !important;
+  font-weight: 600;
+}
+
+/* ── FOOTER ── */
+.md-footer {
+  background: #111827;
+}
+
+.md-footer-meta {
+  background: #0d1520;
+}
+
+.md-footer__title {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+}
+
+/* ── BACK-TO-TOP BUTTON ── */
+.md-top {
+  background: #1587c2;
+  color: white;
+  border-radius: 100px;
+  font-weight: 600;
+  box-shadow: 0 4px 16px rgba(21,135,194,0.35);
+}
+
+/* ── PREV/NEXT PAGE NAVIGATION ── */
+.md-footer__link {
+  background: white;
+  border-radius: 12px;
+  margin: 0.5rem;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 2px 12px rgba(17,24,39,0.07);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.md-footer__link:hover {
+  box-shadow: 0 6px 24px rgba(21,135,194,0.15);
+  transform: translateY(-2px);
+}
+
+.md-footer__link .md-footer__title {
+  color: #111827;
+  font-size: 0.9rem;
+}
+
+.md-footer__link .md-footer__direction {
+  color: #1587c2;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* ── TAG CHIPS (if using tags plugin) ── */
+.md-tag {
+  background: rgba(21,135,194,0.10);
+  color: #1587c2;
+  font-weight: 600;
+  border-radius: 100px;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
 }
