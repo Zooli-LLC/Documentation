@@ -1,3 +1,8 @@
+---
+title: Integrating Podio with QuickBooks Online
+description: Learn the step-by-step process for configuring Podio and QuickBooks Online
+---
+
 Quickbooks Online offers a flexible API that allows you to send an receive several different data points with Podio. This guide will walk through the authentication setup, and will create a basic flow that creates Quickbooks Online Invoices from Podio app items. Since there are many different setup requirements depending on your team's needs, this guide can be used as a framework for creating other items in Quickbooks Online, such as Bills, Payments, and more.
 
 This is a developer-level tutorial. Some programming experience is required for this setup.
