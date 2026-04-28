@@ -27,7 +27,7 @@ Add an item to this app for each instance of your follow up schedules. Make sure
 
 Next, you will need to add a few fields to the Podio app that contains your contacts for these follow ups. This could be your Leads or Contacts app, or any other app that stores this type of information.
 
-Consider adding a [section header](https://docs.zooli.io/hc/en-us/articles/360035864973-Podio-Calculation-Creating-a-section-header) to this area in your app to visually separate these fields from the rest of your app.
+Consider adding a Section Header field to this area in your app to visually separate these fields from the rest of your app.
 
 Your app will need the following fields:
 
@@ -71,7 +71,7 @@ For **Email** follow ups, perform a Send Email action, filling in the Email wi
 
 For **SMS **follow ups, use a "Send SMS" action, filling in the body with the SMS Body from your Follow Up Schedule app.
 
-**Note:** Your "To" number must be in format "+1xxxxxxxxxx" in order to be sent. See our article on [formatting phone numbers](https://docs.zooli.io/hc/en-us/articles/360035874553-Regex-Get-only-numbers-from-a-Phone-Field) for assistance with this.
+**Note:** Your "To" number must be in format "+1xxxxxxxxxx" in order to be sent. See our article on [formatting phone numbers](https://docs.zooli.io/guides/Format%20Phone%20Numbers/) for assistance with this.
 
 Once the follow up has been sent, the next follow up will need to be scheduled. To do this, we will need to find the next follow up in our sequence. Create a new sequence variable and set it to the current follow up sequence + 1, then create a search_string variable, setting it to your Schedule Name + Sequence.
 
