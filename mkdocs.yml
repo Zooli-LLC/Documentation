@@ -10,6 +10,8 @@ site_author: Zooli Web Solutions
 theme:
   name: material
   custom_dir: overrides
+  features:
+    - navigation.indexes
 
   # Logo and favicon
   logo: assets/zws_logo_square_white.png
