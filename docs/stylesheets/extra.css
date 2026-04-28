@@ -1,0 +1,8 @@
+:root {
+  --md-primary-fg-color:        #1587c2;
+  --md-primary-fg-color--light: #daeef8;
+  --md-primary-fg-color--dark:  #0f6fa6;
+  --md-accent-fg-color:         #1587c2;
+  --md-text-font:               "DM Sans";
+  --md-code-font:               "Roboto Mono";
+}
