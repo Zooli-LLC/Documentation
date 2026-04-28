@@ -1,0 +1,464 @@
+{% extends "main.html" %}
+
+{% block tabs %}
+{{ super() }}
+
+<style>
+  /* Hide the default content area on the home page */
+  .md-main__inner { margin: 0; }
+  .md-content { display: none; }
+
+  /* ── HOME HERO ── */
+  .home-hero {
+    position: relative;
+    overflow: hidden;
+    background: #111827;
+    padding: 6rem 4rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 420px;
+  }
+
+  /* Blue ellipse — matches main site */
+  .home-hero::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 55%; height: 100%;
+    background: rgba(21,135,194,0.12);
+    clip-path: ellipse(90% 80% at 100% 50%);
+    pointer-events: none;
+  }
+
+  /* Dot grid overlay */
+  .home-hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle, rgba(21,135,194,0.15) 1px, transparent 1px);
+    background-size: 32px 32px;
+    pointer-events: none;
+  }
+
+  .home-hero-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 860px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .home-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #1587c2;
+    padding: 0.4rem 0.9rem;
+    border-radius: 100px;
+    margin-bottom: 1.75rem;
+  }
+
+  .home-eyebrow::before {
+    content: '';
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.7);
+  }
+
+  .home-hero h1 {
+    font-family: 'Manrope', sans-serif !important;
+    font-size: clamp(2.25rem, 4vw, 3.75rem) !important;
+    font-weight: 800 !important;
+    color: #ffffff !important;
+    letter-spacing: -0.03em !important;
+    line-height: 1.08 !important;
+    margin: 0 0 1.25rem !important;
+    border: none !important;
+    padding: 0 !important;
+  }
+
+  .home-hero h1 span {
+    color: #38b6e8;
+  }
+
+  .home-hero p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: rgba(255,255,255,0.55);
+    max-width: 560px;
+    margin: 0 auto 2.25rem;
+    line-height: 1.75;
+  }
+
+  .home-hero-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .home-btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(135deg, #1587c2, #38b6e8);
+    color: white !important;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 0.8rem 1.75rem;
+    border-radius: 100px;
+    text-decoration: none !important;
+    border: none !important;
+    transition: opacity 0.2s, transform 0.15s;
+    box-shadow: 0 4px 20px rgba(21,135,194,0.4);
+  }
+
+  .home-btn-primary:hover {
+    opacity: 0.88;
+    transform: translateY(-1px);
+  }
+
+  .home-btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: rgba(255,255,255,0.75) !important;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 0.8rem 1.5rem;
+    border-radius: 100px;
+    text-decoration: none !important;
+    border: 1px solid rgba(255,255,255,0.18) !important;
+    transition: border-color 0.2s, color 0.2s;
+  }
+
+  .home-btn-secondary:hover {
+    border-color: rgba(255,255,255,0.45) !important;
+    color: #ffffff !important;
+  }
+
+  /* ── SECTION WRAPPER ── */
+  .home-section {
+    padding: 4rem 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .home-section-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #1587c2;
+    margin-bottom: 0.75rem;
+    display: block;
+  }
+
+  .home-section-title {
+    font-family: 'Manrope', sans-serif;
+    font-size: clamp(1.75rem, 2.5vw, 2.5rem);
+    font-weight: 800;
+    color: #111827;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    margin-bottom: 0.75rem;
+  }
+
+  .home-section-sub {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #5a6a80;
+    max-width: 480px;
+    line-height: 1.75;
+    margin-bottom: 2.5rem;
+  }
+
+  /* ── TOPIC CARDS ── */
+  .home-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+
+  .home-card {
+    background: #ffffff;
+    border: 1px solid rgba(17,24,39,0.09);
+    border-radius: 20px;
+    padding: 1.75rem;
+    text-decoration: none !important;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.25s, box-shadow 0.25s;
+  }
+
+  .home-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #1587c2, #38b6e8);
+    opacity: 0;
+    transition: opacity 0.25s;
+  }
+
+  .home-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(17,24,39,0.10);
+    border-color: rgba(21,135,194,0.2);
+  }
+
+  .home-card:hover::before { opacity: 1; }
+
+  .home-card-icon {
+    width: 46px; height: 46px;
+    border-radius: 12px;
+    background: #daeef8;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.3rem;
+    flex-shrink: 0;
+  }
+
+  .home-card-title {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1rem;
+    font-weight: 800;
+    color: #111827;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+  }
+
+  .home-card-desc {
+    font-size: 0.875rem;
+    font-weight: 300;
+    color: #5a6a80;
+    line-height: 1.7;
+    flex: 1;
+  }
+
+  .home-card-arrow {
+    font-size: 0.8rem;
+    color: #1587c2;
+    font-weight: 600;
+    margin-top: 0.25rem;
+    transition: transform 0.2s;
+    display: inline-block;
+  }
+
+  .home-card:hover .home-card-arrow { transform: translateX(4px); }
+
+  /* ── DIVIDER ── */
+  .home-divider {
+    border: none;
+    border-top: 1px solid rgba(17,24,39,0.08);
+    margin: 0 4rem;
+  }
+
+  /* ── PLATFORMS STRIP ── */
+  .home-platforms {
+    padding: 2.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    background: #ffffff;
+    border-top: 1px solid rgba(17,24,39,0.08);
+    border-bottom: 1px solid rgba(17,24,39,0.08);
+  }
+
+  .home-platforms-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #5a6a80;
+  }
+
+  .home-platforms-logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.75rem;
+    flex-wrap: wrap;
+  }
+
+  .home-platform {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    opacity: 0.5;
+    transition: opacity 0.2s;
+    text-decoration: none !important;
+    border: none !important;
+  }
+
+  .home-platform:hover { opacity: 1; }
+
+  .home-platform img {
+    width: 20px; height: 20px;
+    border-radius: 4px;
+  }
+
+  .home-platform span {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #111827;
+    white-space: nowrap;
+  }
+
+  /* ── CTA BAND ── */
+  .home-cta {
+    background: #111827;
+    padding: 5rem 4rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .home-cta::before {
+    content: '';
+    position: absolute;
+    bottom: -30%; left: 50%;
+    transform: translateX(-50%);
+    width: 60%; height: 120%;
+    background: radial-gradient(ellipse, rgba(21,135,194,0.22) 0%, transparent 65%);
+    pointer-events: none;
+  }
+
+  .home-cta-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .home-cta h2 {
+    font-family: 'Manrope', sans-serif !important;
+    font-size: clamp(2rem, 3.5vw, 3rem) !important;
+    font-weight: 800 !important;
+    color: #ffffff !important;
+    letter-spacing: -0.02em !important;
+    margin-bottom: 1rem !important;
+    border: none !important;
+    padding: 0 !important;
+  }
+
+  .home-cta h2 span { color: #38b6e8; }
+
+  .home-cta p {
+    font-size: 1rem;
+    color: rgba(255,255,255,0.45);
+    font-weight: 300;
+    margin-bottom: 2rem;
+    line-height: 1.75;
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 960px) {
+    .home-hero { padding: 5rem 1.5rem 4rem; }
+    .home-section { padding: 3rem 1.5rem; }
+    .home-cards { grid-template-columns: 1fr; }
+    .home-platforms { padding: 2rem 1.5rem; }
+    .home-cta { padding: 4rem 1.5rem; }
+    .home-divider { margin: 0 1.5rem; }
+  }
+</style>
+
+<!-- ── HERO ── -->
+<section class="home-hero">
+  <div class="home-hero-inner">
+    <div class="home-eyebrow">Zooli Documentation</div>
+    <h1>Tutorials for <span>Podio</span> and <span>Tape</span></h1>
+    <p>Step-by-step guides for building workspaces, automations, integrations, and custom solutions - by the team at Zooli Web Solutions.</p>
+    <div class="home-hero-actions">
+      <a href="guides/" class="home-btn-primary">Browse guides →</a>
+      <a href="https://zooli.io/contact.html" class="home-btn-secondary">Work with us</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── TOPIC CARDS ── -->
+<div class="home-section">
+  <span class="home-section-label">What's inside</span>
+  <h2 class="home-section-title">Everything you need to build</h2>
+  <p class="home-section-sub">From first-time setup to advanced automation flows - find what you need below.</p>
+
+  <div class="home-cards">
+
+    <a href="guides/" class="home-card">
+      <div class="home-card-icon">📖</div>
+      <div class="home-card-title">Guides</div>
+      <div class="home-card-desc">Step-by-step walkthroughs for building workspaces, setting up apps, and configuring your processes from scratch.</div>
+      <span class="home-card-arrow">Browse guides →</span>
+    </a>
+
+    <a href="free-starter-templates/" class="home-card">
+      <div class="home-card-icon">🚀</div>
+      <div class="home-card-title">Free Starter Templates</div>
+      <div class="home-card-desc">Ready-to-use workspace templates to get up and running quickly. Download, install, and customise to fit your business.</div>
+      <span class="home-card-arrow">See templates →</span>
+    </a>
+
+    <a href="https://zooli.io/contact.html" class="home-card">
+      <div class="home-card-icon">💬</div>
+      <div class="home-card-title">Need custom help?</div>
+      <div class="home-card-desc">Can't find what you need in the docs? Zooli builds fully custom solutions tailored to your exact business processes.</div>
+      <span class="home-card-arrow">Get in touch →</span>
+    </a>
+
+  </div>
+</div>
+
+<!-- ── PLATFORMS ── -->
+<div class="home-platforms">
+  <span class="home-platforms-label">Platforms covered</span>
+  <div class="home-platforms-logos">
+    <a class="home-platform" href="https://podio.com" target="_blank">
+      <img src="https://www.google.com/s2/favicons?domain=podio.com&sz=64" alt="Podio">
+      <span>Podio</span>
+    </a>
+    <a class="home-platform" href="https://tapeapp.com" target="_blank">
+      <img src="https://www.google.com/s2/favicons?domain=tapeapp.com&sz=64" alt="Tape">
+      <span>Tape</span>
+    </a>
+    <a class="home-platform" href="https://zapier.com" target="_blank">
+      <img src="https://www.google.com/s2/favicons?domain=zapier.com&sz=64" alt="Zapier">
+      <span>Zapier</span>
+    </a>
+    <a class="home-platform" href="https://make.com" target="_blank">
+      <img src="https://www.google.com/s2/favicons?domain=make.com&sz=64" alt="Make">
+      <span>Make</span>
+    </a>
+    <a class="home-platform" href="https://airtable.com" target="_blank">
+      <img src="https://www.google.com/s2/favicons?domain=airtable.com&sz=64" alt="Airtable">
+      <span>Airtable</span>
+    </a>
+    <a class="home-platform" href="https://quickbooks.intuit.com" target="_blank">
+      <img src="https://www.google.com/s2/favicons?domain=quickbooks.intuit.com&sz=64" alt="QuickBooks">
+      <span>QuickBooks</span>
+    </a>
+  </div>
+</div>
+
+<!-- ── CTA ── -->
+<div class="home-cta">
+  <div class="home-cta-inner">
+    <h2>Need something <span>built for you?</span></h2>
+    <p>The docs cover the fundamentals - but if you need a fully custom system built around your business, that's what we do.</p>
+    <a href="https://zooli.io/contact.html" class="home-btn-primary">Book a free consultation →</a>
+  </div>
+</div>
+
+{% endblock %}
+{% block content %}{% endblock %}
+{% block footer %}{{ super() }}{% endblock %}
