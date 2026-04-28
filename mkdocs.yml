@@ -17,6 +17,10 @@ theme:
   logo: assets/zws_logo_square_white.png
   favicon: assets/favicon.png
 
+plugins:
+  - search
+  - section-index
+
   # Fonts (loaded via extra.css @import — set here too for Material's preload)
   font:
     text: DM Sans
