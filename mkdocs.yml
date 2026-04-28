@@ -2,7 +2,7 @@ site_name: Zooli Documentation
 site_url: https://docs.zooli.io/
 theme:
   name: material
-  logo: docs/assets/zws_logo_square.png
+  logo: docs/assets/zws_logo_square_white.png
   favicon: docs/assets/favicon.png
 font:
   text: DM Sans
