@@ -2,6 +2,8 @@ site_name: Zooli Documentation
 site_url: https://docs.zooli.io/
 theme:
   name: material
+  logo: assets/zws_logo_square.png
+  favicon: assets/favicon.png
 font:
   text: DM Sans
   code: Roboto Mono
