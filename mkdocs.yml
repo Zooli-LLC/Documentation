@@ -2,6 +2,14 @@ site_name: Zooli Documentation
 site_url: https://docs.zooli.io/
 theme:
   name: material
+font:
+  text: DM Sans
+  code: Roboto Mono
+palette: 
+  primary: custom
+  accent: custom
+extra_css: 
+  - stylesheets/extra.css
 extra:
   analytics:
     provider: google
