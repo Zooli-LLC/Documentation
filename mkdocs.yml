@@ -1,18 +1,54 @@
+# ── Zooli Documentation — mkdocs.yml ──
+# Merge this into your existing mkdocs.yml.
+# Only the theme/extra_css/extra_javascript blocks need updating.
+
 site_name: Zooli Documentation
-site_url: https://docs.zooli.io/
+site_url: https://docs.zooli.io
+site_description: Tutorials and guides for Podio and Tape — by Zooli Web Solutions.
+site_author: Zooli Web Solutions
+
 theme:
   name: material
-  logo: docs/assets/zws_logo_square_white.png
-  favicon: docs/assets/favicon.png
-font:
-  text: DM Sans
-  code: Roboto Mono
-palette: 
-  primary: custom
-  accent: custom
-extra_css: 
+  custom_dir: overrides
+
+  # Logo and favicon
+  logo: assets/zws_logo_square_white.png
+  favicon: assets/favicon.png
+
+  # Fonts (loaded via extra.css @import — set here too for Material's preload)
+  font:
+    text: DM Sans
+    code: Roboto Mono
+
+  # Color palette
+  palette:
+    - scheme: default
+      primary: custom
+      accent: custom
+
+  # Feature flags — enable useful Material features
+  features:
+    - navigation.instant        # SPA-style fast page loads
+    - navigation.tracking       # Updates URL as you scroll
+    - navigation.tabs           # Top-level sections as tabs (optional — remove if you prefer sidebar only)
+    - navigation.sections       # Groups in sidebar stay expanded
+    - navigation.top            # Back-to-top button
+    - search.highlight          # Highlights search terms on the page
+    - search.suggest            # Autocomplete in search
+    - content.code.copy         # Copy button on code blocks
+    - content.code.annotate     # Code annotations
+
+# Custom CSS — this is where the Zooli branding lives
+extra_css:
   - stylesheets/extra.css
+
+# NOTE: Add this to the top of your docs/index.md front matter:
+# ---
+# template: home.html
+# ---
+
+# Optional: Google Analytics
 extra:
   analytics:
     provider: google
-    property: G-3BF57DHM3R
+    property: G-363929690
