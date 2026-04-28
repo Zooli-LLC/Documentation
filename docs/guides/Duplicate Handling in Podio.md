@@ -2,7 +2,7 @@ Setting up flows to handle duplicate entries in your Podio apps is an important 
 
 The first step is to determine which field in your app to use as the duplicate checker. This can be tricky, as you need to ensure that all values in this field are using the same format. For example, using an address field may not be a good idea as there are several different ways you might enter the same address (i.e. "1234 Main Street, 1234 Main st." etc.)
 
-One option is to use a **Phone** field, and have a separate flow in your app that automatically formats all numbers in the exact same format. See our article on [formatting phone numbers](https://docs.zooli.io/hc/en-us/articles/360035874553-Regex-Get-only-numbers-from-a-Phone-Field) for assistance with this.
+One option is to use a **Phone** field, and have a separate flow in your app that automatically formats all numbers in the exact same format. See our article on [formatting phone numbers](https://docs.zooli.io/guides/Format%20Phone%20Numbers/) for assistance with this.
 
 Once you know which field you are using in your duplicate search, you are ready to create a new flow in Podio Workflow Automation. We recommend creating a flow that triggers on **Item Create**.
 
