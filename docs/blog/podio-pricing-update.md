@@ -46,7 +46,7 @@ A surprisingly high number of automation actions are wasted on inefficient workf
 Instead of paying for higher tiers, you can work with a certified Podio partner like **Zooli**. We can audit your workspace, consolidate your flows, and optimize your systems to dramatically reduce the number of actions your business consumes each month. 
 
 #### 3. Migrate to a Modern Alternative Like Tape
-If you are frustrated by the price hike and want a platform that offers modern features without the restrictive limits, it is time to upgrade to **Tape**. 
+If you are frustrated by the price hike and want a platform that offers modern features without the restrictive limits, it is time to upgrade to **[Tape](https://tape.cello.so/vaNktdHJtoW)**. 
 
 If you love the way Podio organizes data, you will feel right at home. Tape is structured **exactly like Podio**, utilizing the same intuitive concept of **workspaces and apps** to map out your business. There is no confusing paradigm shift or steep learning curve - just a faster, cleaner version of what you already know.
 
