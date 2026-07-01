@@ -348,3 +348,7 @@
   font-size: 0.72rem;
   letter-spacing: 0.04em;
 }
+/* ── PAGE WIDTH SIZING ── */
+.md-grid {
+  max-width: 1440px; /* Increase this value to make the main section wider */
+}
