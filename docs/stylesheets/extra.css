@@ -125,24 +125,24 @@
 .md-typeset h1 {
   font-family: 'Manrope', sans-serif;
   font-weight: 800;
-  font-size: 2.2rem;
-  letter-spacing: -0.03em;
+  font-size: 1.65rem; /* Reduced from 2.2rem */
+  letter-spacing: -0.02em;
   color: #111827;
   border-bottom: 2px solid #daeef8;
   padding-bottom: 0.75rem;
   margin-bottom: 1.5rem;
-  line-height: 1.1;
+  line-height: 1.2;
 }
 
 /* h2 */
 .md-typeset h2 {
   font-family: 'Manrope', sans-serif;
   font-weight: 700;
-  font-size: 1.4rem;
-  letter-spacing: -0.02em;
+  font-size: 1.25rem; /* Reduced from 1.4rem */
+  letter-spacing: -0.01em;
   color: #111827;
-  margin-top: 2.5rem;
-  padding-top: 1.5rem;
+  margin-top: 2rem;
+  padding-top: 1.25rem;
   border-top: 1px solid rgba(17,24,39,0.08);
 }
 
@@ -150,16 +150,16 @@
 .md-typeset h3 {
   font-family: 'Manrope', sans-serif;
   font-weight: 700;
-  font-size: 1.05rem;
+  font-size: 1.0rem; /* Reduced from 1.05rem */
   letter-spacing: -0.01em;
   color: #1f2d3d;
-  margin-top: 1.75rem;
+  margin-top: 1.5rem;
 }
 
 /* Body text */
 .md-typeset {
-  font-size: 0.95rem;
-  line-height: 1.8;
+  font-size: 0.85rem; /* Reduced from 0.95rem */
+  line-height: 1.7;
   color: #1f2d3d;
 }
 
@@ -220,7 +220,7 @@
   border-radius: 12px;
   border-left-width: 4px;
   box-shadow: 0 2px 12px rgba(17,24,39,0.06);
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
 .md-typeset .admonition.note,
@@ -247,7 +247,7 @@
   overflow: hidden;
   box-shadow: 0 2px 12px rgba(17,24,39,0.06);
   border: none;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
 .md-typeset table:not([class]) th {
@@ -255,7 +255,7 @@
   color: #ffffff;
   font-family: 'Manrope', sans-serif;
   font-weight: 700;
-  font-size: 0.78rem;
+  font-size: 0.75rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   padding: 0.85rem 1rem;
