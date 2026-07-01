@@ -23,6 +23,14 @@ In addition to automation actions, Podio is also introducing tiered API add-ons 
 
 For heavy users, maintaining your current infrastructure on Podio could mean a significant increase in your monthly SaaS overhead. 
 
+### How to Check Your Current Usage
+
+Before making any major decisions, it's crucial to know exactly how many actions your business consumes. You can view your previous month's workflow automation usage and analyze your current metrics by visiting your account page here:
+
+👉 **[Check Your Podio Workflow Automation Usage](https://workflow-automation.podio.com/account.php)**
+
+Knowing your baseline numbers will help you gauge exactly which tier you fall into and whether optimizing or migrating is your best financial move.
+
 ---
 
 ### Your 3 Best Options Moving Forward
