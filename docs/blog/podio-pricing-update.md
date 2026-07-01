@@ -46,11 +46,19 @@ A surprisingly high number of automation actions are wasted on inefficient workf
 Instead of paying for higher tiers, you can work with a certified Podio partner like **Zooli**. We can audit your workspace, consolidate your flows, and optimize your systems to dramatically reduce the number of actions your business consumes each month. 
 
 #### 3. Migrate to a Modern Alternative Like Tape
-If you are frustrated by the price hike and want a platform that offers modern features without the restrictive limits, it might be time to move to **Tape**. 
+If you are frustrated by the price hike and want a platform that offers modern features without the restrictive limits, it is time to upgrade to **Tape**. 
 
-Tape is a powerful, next-generation workflow platform built for businesses that need to scale. Most importantly, **Tape is committed to offering 5 million automation actions per month**, giving you back the freedom to automate without constantly watching your usage meters. 
+If you love the way Podio organizes data, you will feel right at home. Tape is structured **exactly like Podio**, utilizing the same intuitive concept of **workspaces and apps** to map out your business. There is no confusing paradigm shift or steep learning curve - just a faster, cleaner version of what you already know.
 
-Worried about the hassle of moving? We’ve made it incredibly simple. Zooli offers a **completely free migration tool** to seamlessly transition your data and workspaces from Podio over to Tape. 
+But Tape isn't just a replacement; it’s a massive upgrade. While keeping the core structure familiar, Tape delivers advanced features that Podio users have been requesting for a decade:
+
+* **Native Dashboards:** Build powerful, real-time visual charts and reports right inside your workspace without relying on clunky third-party add-ons.
+* **Granular Access Control:** Gain superior, precise security over who can view, edit, or interact with specific fields and records.
+* **Customizable App Layouts:** Break out of Podio's rigid single-column structure and design a workspace tailored exactly to how your team works.
+
+Most importantly, **Tape is fully committed to keeping their 5 million automation actions per month included**, giving you back the ultimate freedom to scale your business without fear of usage penalties.
+
+Worried about the hassle of moving? We’ve made it incredibly simple. Zooli offers a **completely free migration tool** to seamlessly transition your data, apps, and workspaces from Podio over to Tape. 
 
 👉 **[Try Zooli's Free Podio-to-Tape Migration Tool Here](https://zooli.io/podio2tape.html)**
 
