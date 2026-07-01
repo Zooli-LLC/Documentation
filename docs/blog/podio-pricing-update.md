@@ -13,6 +13,7 @@ Here is a breakdown of the recent changes, what they mean for your bottom line, 
 If your organization exceeds the new 25,000 monthly action limit when the new pricing goes live on August 1st, you will be required to purchase an Automation Add-on to keep your workflows running. 
 
 Based on the newly released pricing tiers, scaling back up to the capacity you previously enjoyed will come at a premium:
+
 * **100,000 actions/month:** $39/month
 * **500,000 actions/month:** $119/month
 * **1,000,000 actions/month:** $159/month
